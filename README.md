@@ -296,7 +296,7 @@ Elimina un archivo de S3 y sus metadatos de RDS.
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/file-manager.git
+git clone https://github.com/elieabudfk/file-storage.git
 cd file-manager
 ```
 
