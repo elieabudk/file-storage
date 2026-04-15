@@ -1,4 +1,4 @@
-const API_URL = 'https://q2m3g5gwhc.execute-api.eu-west-3.amazonaws.com/dev'
+const API_URL = 'localhost:3000'
 
 function getFileIcon(type) {
   if (type.startsWith('image/')) return { bg: '#fef3c7', color: '#d97706', letter: 'IMG' }
