@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- PANTALLA LOGIN -->
+    <div class="login-screen" id="loginScreen">
+      <div class="login-card">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+              <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="brand-name">File Manager</div>
+            <div class="brand-sub">Gestión segura de archivos</div>
+          </div>
+        </div>
+        <div class="error-msg" id="loginError"></div>
+        <label class="form-label">Correo electrónico</label>
+        <input class="form-input" id="emailInput" type="email" placeholder="tu@email.com">
+        <label class="form-label">Contraseña</label>
+        <input class="form-input" id="passwordInput" type="password" placeholder="••••••••">
+        <button class="btn-primary" id="loginBtn">Iniciar sesión</button>
+      </div>
+    </div>
+
+    <!-- PANTALLA PRINCIPAL -->
+    <div class="main-screen" id="mainScreen">
+      <div class="topbar">
+        <div class="topbar-brand">
+          <div class="topbar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+              <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <span class="topbar-name">File Manager</span>
+        </div>
+        <div class="topbar-right">
+          <span class="user-badge" id="userEmail"></span>
+          <button class="btn-logout" id="logoutBtn">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="upload-zone" id="uploadZone">
+          <div class="upload-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round">
+              <polyline points="16 16 12 12 8 16"/>
+              <line x1="12" y1="12" x2="12" y2="21"/>
+              <path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3"/>
+            </svg>
+          </div>
+          <div class="upload-title">Arrastra archivos aquí</div>
+          <div class="upload-sub">o haz clic para seleccionar desde tu computadora</div>
+          <button class="btn-upload" id="selectFileBtn">Seleccionar archivo</button>
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <input type="file" class="file-input" id="fileInput">
+        </div>
+
+        <div class="section-title">
+          Mis archivos
+          <span class="file-count" id="fileCount">0 archivos</span>
+        </div>
+
+        <div id="filesList"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
