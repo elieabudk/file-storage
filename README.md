@@ -1,8 +1,7 @@
-# 📁 FileVault — Sistema de gestión de archivos
+# 📁 File Manager — Sistema de gestión de archivos
 
 Sistema de gestión de archivos seguro con autenticación, almacenamiento en la nube y acceso controlado por usuario. Cada usuario solo puede ver y gestionar sus propios archivos.
 
-🌐 **Demo:** [https://d1mbsf2ysinvol.cloudfront.net](https://d1mbsf2ysinvol.cloudfront.net)
 
 ---
 
